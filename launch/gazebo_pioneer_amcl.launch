@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="x_init_pose" default="0"/>
+    <arg name="y_init_pose" default="0"/>
+    <arg name="z_init_pose" default="0"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="world_name" value="$(find visual_servo)/worlds/Empty_world.world"/>
+    
+    <!-- Start Gazebo simulator with a given environment -->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find visual_servo)/urdf/pioneer3dx.xacro" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+	<arg name="world_name" value="$(arg world_name)" />
+    </include>
+
+    <!-- push robot_description to factory and spawn robot in gazebo -->
+    <node name="spawn_pioneer" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-x $(arg x_init_pose) -y $(arg y_init_pose) -z $(arg z_init_pose) -urdf -param robot_description -model robot_description"/>
+
+</launch>
