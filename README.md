@@ -2,18 +2,18 @@
 We use visp_ros and gazebo to complete an visual servo simulation
 The development environment used for this project is Ubuntu 18.04 + ROS Melodic + Visp_ros + Gazebo
 ## 1.Install
-Firstly， you need install ROS and create the workspace. 
-How to install ROS on Ubuntu: http://wiki.ros.org/melodic/Installation/Ubuntu
-How to create a ROS workspace: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+Firstly, you need install ROS and create the workspace.   
+How to install ROS on Ubuntu: http://wiki.ros.org/melodic/Installation/Ubuntu  
+How to create a ROS workspace: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment  
 ```bash
 sudo apt-get install libvisp-dev
 sudo apt-get install ros-melodic-visp
 sudo apt-get install ros-melodic-vision-visp
 ```
-You can also install ViSP, Visp_ros and vision_visp from source for Ubuntu. The tutorial of installation is here: 
-ViSP: https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-install-ubuntu.html
-Visp_ros: http://wiki.ros.org/visp_ros/Tutorials/Howto_install_visp_ros
-vision_visp: http://wiki.ros.org/vision_visp
+You can also install ViSP, Visp_ros and vision_visp from source for Ubuntu. The tutorial of installation is here:   
+ViSP: https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-install-ubuntu.html  
+Visp_ros: http://wiki.ros.org/visp_ros/Tutorials/Howto_install_visp_ros  
+vision_visp: http://wiki.ros.org/vision_visp  
 
 ## 2. Download the project file
 ```bash
