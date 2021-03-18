@@ -11,5 +11,6 @@ include_directories( "~/catkin_ws/src/visual_servo/include/"
 add_executable(tutorial-ros-pioneer-visual-servo tutorial-ros-pioneer-visual-servo.cpp)
 target_link_libraries(tutorial-ros-pioneer-visual-servo ${visp_ros_LIBRARIES})
 
-
+add_executable(tutorial-ros-pioneer-visual-servo-4points tutorial-ros-pioneer-visual-servo-4points.cpp)
+target_link_libraries(tutorial-ros-pioneer-visual-servo-4points ${visp_ros_LIBRARIES})
 
