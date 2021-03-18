@@ -49,5 +49,4 @@ make
 ```
 
 ## Video demonstration
-
-
+![](https://github.com/EmptyCity1995/visual_servo/blob/main/exsample_video.mp4)
